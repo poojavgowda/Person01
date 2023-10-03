@@ -1,0 +1,22 @@
+schema{
+query: Query
+mutation: Mutation
+}
+
+type Person {
+    id: ID!
+    name: String!
+    age: Int
+    address: String
+}
+
+type Query {
+    getAllPersons: [Person]
+    getPerson(id:ID!): Person
+}
+
+type Mutation {
+    createPerson(name: String!,age: Int!,address: String!): Person
+    updatePerson(id: ID!, name: String!): Person
+    deletePerson(id: ID!): Boolean
+}

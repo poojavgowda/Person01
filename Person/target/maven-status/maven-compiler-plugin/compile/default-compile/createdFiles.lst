@@ -1,0 +1,4 @@
+com\example\person\model\Person.class
+com\example\person\PersonApplication.class
+com\example\person\resolver\PersonResolver.class
+com\example\person\repository\PersonRepository.class
